@@ -41,6 +41,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        window.statusBarColor = getColor(R.color.screen_background)
+        window.navigationBarColor = getColor(R.color.screen_background)
         setContent {
             QuestLayout0253Theme {
                 StudentListScreen()
