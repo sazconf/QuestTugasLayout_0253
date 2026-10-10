@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">QuestLayout0253</string>
+    <string name="screen_title">Teknologi Informasi</string>
+    <string name="university_subtitle">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="student_bambang_name">Bambang Sumantri</string>
+    <string name="student_bambang_phone">081234567890</string>
+    <string name="student_bambang_address">Turi, Sleman</string>
+    <string name="student_gibran_name">Gibran Fathoni</string>
+    <string name="student_gibran_phone">085436874190</string>
+    <string name="student_gibran_address">Kasihan, Bantul</string>
+    <string name="student_zhila_name">Zhila Fadhilah</string>
+    <string name="student_zhila_phone">085436874190</string>
+    <string name="student_zhila_address">Depok, Sleman</string>
+    <string name="student_ahmad_name">Ahmad Alfian</string>
+    <string name="student_ahmad_phone">085436874190</string>
+    <string name="student_ahmad_address">Gamping, Sleman</string>
+    <string name="copyright">Copyright, 2026</string>
+    <string name="umy_logo_description">Universitas Muhammadiyah Yogyakarta emblem</string>
 </resources>
