@@ -80,30 +80,6 @@ fun StudentListScreen() {
 }
 
 @Composable
-private fun Header() {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(top = dimensionResource(R.dimen.header_top_spacing)),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = stringResource(R.string.screen_title),
-            color = colorResource(R.color.text_dark),
-            fontSize = dimensionResource(R.dimen.header_title_size).value.sp,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            text = stringResource(R.string.university_subtitle),
-            color = colorResource(R.color.text_dark),
-            fontSize = dimensionResource(R.dimen.header_subtitle_size).value.sp,
-            fontWeight = FontWeight.SemiBold
-        )
-        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.header_bottom_spacing)))
-    }
-}
-
-@Composable
 fun StudentCard(student: StudentUiModel) {
     val nameStyle = if (student.useScriptName) {
         FontFamily.Cursive
