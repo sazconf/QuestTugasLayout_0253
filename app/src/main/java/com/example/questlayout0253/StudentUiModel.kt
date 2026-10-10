@@ -4,12 +4,12 @@ import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 
 data class StudentUiModel(
-    @StringRes val nameRes: Int,
-    @StringRes val phoneRes: Int,
-    @StringRes val addressRes: Int,
-    @ColorRes val backgroundRes: Int,
-    @ColorRes val nameColorRes: Int,
-    @ColorRes val phoneColorRes: Int,
-    @ColorRes val addressColorRes: Int,
+    @param:StringRes val nameRes: Int,
+    @param:StringRes val phoneRes: Int,
+    @param:StringRes val addressRes: Int,
+    @param:ColorRes val backgroundRes: Int,
+    @param:ColorRes val nameColorRes: Int,
+    @param:ColorRes val phoneColorRes: Int,
+    @param:ColorRes val addressColorRes: Int,
     val useScriptName: Boolean = false
 )
