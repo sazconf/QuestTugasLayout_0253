@@ -79,19 +79,6 @@ fun StudentListScreen() {
     }
 }
 
-@Composable
-private fun Footer() {
-    Text(
-        text = stringResource(R.string.copyright),
-        color = colorResource(R.color.text_dark),
-        fontSize = dimensionResource(R.dimen.footer_text_size).value.sp,
-        modifier = Modifier.padding(
-            top = dimensionResource(R.dimen.footer_top_spacing),
-            bottom = dimensionResource(R.dimen.footer_bottom_spacing)
-        )
-    )
-}
-
 @Preview(showBackground = true, widthDp = 360, heightDp = 800)
 @Composable
 private fun StudentListPreview() {
