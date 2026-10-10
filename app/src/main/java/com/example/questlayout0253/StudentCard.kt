@@ -17,6 +17,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
@@ -32,7 +34,13 @@ fun StudentCard(student: StudentUiModel) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(dimensionResource(R.dimen.card_height)),
+            .height(dimensionResource(R.dimen.card_height))
+            .semantics {
+                contentDescription = stringResource(
+                    R.string.student_card_description,
+                    stringResource(student.nameRes)
+                )
+            },
         shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner_radius)),
         colors = CardDefaults.cardColors(containerColor = colorResource(student.backgroundRes))
     ) {
