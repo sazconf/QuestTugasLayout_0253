@@ -20,6 +20,10 @@ Static records are represented by `StudentUiModel` and assembled in
 `StudentData.kt`. `strings.xml`, `colors.xml`, and `dimens.xml` contain the
 visible copy, palette, and reusable sizing values.
 
+## Screenshot
+
+![QuestTugasLayout_0253 student list screen](docs/screenshots/student-list.png)
+
 ## Build and run
 
 Open the project in Android Studio, or run:
