@@ -30,16 +30,17 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun StudentCard(student: StudentUiModel) {
     val nameStyle = if (student.useScriptName) FontFamily.Cursive else FontFamily.Default
+    val cardDescription = stringResource(
+        R.string.student_card_description,
+        stringResource(student.nameRes)
+    )
 
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .height(dimensionResource(R.dimen.card_height))
             .semantics {
-                contentDescription = stringResource(
-                    R.string.student_card_description,
-                    stringResource(student.nameRes)
-                )
+                contentDescription = cardDescription
             },
         shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner_radius)),
         colors = CardDefaults.cardColors(containerColor = colorResource(student.backgroundRes))
